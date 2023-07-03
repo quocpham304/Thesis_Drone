@@ -1,0 +1,62 @@
+2022-12-13 11:40:18,162 [INFO] Activator:179 - 
+
+
+2022-12-13 11:40:18,165 [INFO] Activator:180 - !SESSION log4j initialized
+2022-12-13 11:45:35,188 [ERROR] ConfigurationRetriever:140 - IOException on connection: sw-center.st.com
+2022-12-13 11:45:35,190 [ERROR] ConfigurationRetriever:140 - IOException on connection: sw-center.st.com
+2022-12-13 11:45:35,190 [ERROR] ConfigurationRetriever:140 - IOException on connection: sw-center.st.com
+2022-12-13 11:45:54,758 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2022-12-13 11:45:54,759 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2022-12-13 11:45:54,762 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2022-12-13 11:48:46,397 [INFO] Activator:179 - 
+
+
+2022-12-13 11:48:46,400 [INFO] Activator:180 - !SESSION log4j initialized
+2022-12-18 18:42:09,715 [INFO] Activator:179 - 
+
+
+2022-12-18 18:42:09,715 [INFO] Activator:180 - !SESSION log4j initialized
+2022-12-18 18:42:15,979 [ERROR] ConfigurationRetriever:140 - IOException on connection: No subject alternative DNS name matching sw-center.st.com found.
+2022-12-18 18:42:16,057 [ERROR] ConfigurationRetriever:140 - IOException on connection: No subject alternative DNS name matching sw-center.st.com found.
+2022-12-18 18:42:16,136 [ERROR] ConfigurationRetriever:140 - IOException on connection: No subject alternative DNS name matching sw-center.st.com found.
+2022-12-18 18:42:21,573 [ERROR] ConfigurationRetriever:140 - IOException on connection: No subject alternative DNS name matching sw-center.st.com found.
+2022-12-18 18:42:21,636 [ERROR] ConfigurationRetriever:140 - IOException on connection: No subject alternative DNS name matching sw-center.st.com found.
+2022-12-18 18:42:21,698 [ERROR] ConfigurationRetriever:140 - IOException on connection: No subject alternative DNS name matching sw-center.st.com found.
+2022-12-18 18:43:15,796 [INFO] Activator:179 - 
+
+
+2022-12-18 18:43:15,812 [INFO] Activator:180 - !SESSION log4j initialized
+2022-12-18 18:43:20,749 [ERROR] ConfigurationRetriever:140 - IOException on connection: No subject alternative DNS name matching sw-center.st.com found.
+2022-12-18 18:43:20,812 [ERROR] ConfigurationRetriever:140 - IOException on connection: No subject alternative DNS name matching sw-center.st.com found.
+2022-12-18 18:43:20,874 [ERROR] ConfigurationRetriever:140 - IOException on connection: No subject alternative DNS name matching sw-center.st.com found.
+2022-12-18 18:43:28,497 [ERROR] ConfigurationRetriever:140 - IOException on connection: No subject alternative DNS name matching sw-center.st.com found.
+2022-12-18 18:43:28,577 [ERROR] ConfigurationRetriever:140 - IOException on connection: No subject alternative DNS name matching sw-center.st.com found.
+2022-12-18 18:43:28,655 [ERROR] ConfigurationRetriever:140 - IOException on connection: No subject alternative DNS name matching sw-center.st.com found.
+2022-12-19 13:29:58,531 [INFO] Activator:179 - 
+
+
+2022-12-19 13:29:58,547 [INFO] Activator:180 - !SESSION log4j initialized
+2022-12-19 13:30:03,351 [ERROR] ConfigurationRetriever:140 - IOException on connection: sw-center.st.com
+2022-12-19 13:30:03,351 [ERROR] ConfigurationRetriever:140 - IOException on connection: sw-center.st.com
+2022-12-19 13:30:03,351 [ERROR] ConfigurationRetriever:140 - IOException on connection: sw-center.st.com
+2022-12-19 13:30:19,783 [ERROR] ConfigurationRetriever:140 - IOException on connection: sw-center.st.com
+2022-12-19 13:30:19,799 [ERROR] ConfigurationRetriever:140 - IOException on connection: sw-center.st.com
+2022-12-19 13:30:19,799 [ERROR] ConfigurationRetriever:140 - IOException on connection: sw-center.st.com
+2022-12-22 08:49:51,383 [INFO] Activator:179 - 
+
+
+2022-12-22 08:49:51,399 [INFO] Activator:180 - !SESSION log4j initialized
+2022-12-22 08:50:17,869 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2022-12-22 08:50:17,869 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2022-12-22 08:50:17,869 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2022-12-22 08:50:46,863 [INFO] Activator:179 - 
+
+
+2022-12-22 08:50:46,866 [INFO] Activator:180 - !SESSION log4j initialized
+2022-12-22 08:51:30,493 [INFO] Activator:179 - 
+
+
+2022-12-22 08:51:30,496 [INFO] Activator:180 - !SESSION log4j initialized
+2022-12-22 08:51:55,524 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2022-12-22 08:51:55,524 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2022-12-22 08:51:55,524 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
