@@ -75,7 +75,7 @@ void StartTask03(void const * argument);
 /* USER CODE BEGIN PFP */
 #define MAX_SAMPLE_ADC 10
 
-#define WAIT_FOR_DIRECTING 10000
+#define WAIT_FOR_DIRECTING 100000
 
 #define MAX_BUFFER_SIZE 30
 
@@ -263,9 +263,9 @@ int main(void)
 //  pid.Kd_pitch = 0.4;
 
 // 25/04: PID01 Balance P only
-  pid.Kp_roll = 3.9;
-  pid.Ki_roll = 0.0005;
-  pid.Kd_roll = 0.092;
+  pid.Kp_roll = 2.55;
+  pid.Ki_roll = 0.008;
+  pid.Kd_roll = 0.045;
 
 //Best for now
 //  pid.Kp_roll = 2.5;
@@ -284,9 +284,9 @@ int main(void)
 //  ROL P 00.901 I 00.001 D 00.201 Z -> pid 1 truc
 //  ROL P 01.250 I 00.001 D 00.221 Z -> P manh hon nhung dao dong hon.
 //  ROL P 01.950 I 00.001 D 00.271 Z -> PID 2 truc
-  pid.Kp_pitch = 4.1;//pid.Kp_roll / 2.0;
-  pid.Ki_pitch = 0.001;//pid.Ki_roll / 2.0;
-  pid.Kd_pitch = 0.095;//pid.Kd_roll / 2.0;
+  pid.Kp_pitch = 3.6;//pid.Kp_roll / 2.0;
+  pid.Ki_pitch = 0.0005;//pid.Ki_roll / 2.0;
+  pid.Kd_pitch = 0.075;//pid.Kd_roll / 2.0;
 
   pid.Kp_yaw = 0.65;
   pid.Ki_yaw = 0.000001;

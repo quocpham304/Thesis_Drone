@@ -39,9 +39,9 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  17 .debug_line   000177a9  00000000  00000000  00055e7a  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    0009779c  00000000  00000000  0006d623  2**0
+ 18 .debug_str    0009779d  00000000  00000000  0006d623  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000050  00000000  00000000  00104dbf  2**0
+ 19 .comment      00000050  00000000  00000000  00104dc0  2**0
                   CONTENTS, READONLY
  20 .debug_frame  00006f38  00000000  00000000  00104e10  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
@@ -3605,12 +3605,12 @@ void PID(rawpitchyaw *angle, PID_param *pid, int rop, int Init_CCR, float desire
  8002180:	60b9      	str	r1, [r7, #8]
  8002182:	607a      	str	r2, [r7, #4]
  8002184:	603b      	str	r3, [r7, #0]
-////	pid->elapsedTime = 0.001;
 ////	}
 //    pid->elapsedTime = (pid->time - pid->timePrev) / 1000.0;
 //    pid->timePrev = pid->time;
 
-    pid->elapsedTime = 0.001;
+    //pid->elapsedTime = 0.001;
+	pid->elapsedTime = 0.0005;
  8002186:	68b9      	ldr	r1, [r7, #8]
  8002188:	a35b      	add	r3, pc, #364	; (adr r3, 80022f8 <PID+0x180>)
  800218a:	e9d3 2300 	ldrd	r2, r3, [r3]
@@ -3798,7 +3798,7 @@ void PID(rawpitchyaw *angle, PID_param *pid, int rop, int Init_CCR, float desire
  80022f4:	e008      	b.n	8002308 <PID+0x190>
  80022f6:	bf00      	nop
  80022f8:	d2f1a9fc 	.word	0xd2f1a9fc
- 80022fc:	3f50624d 	.word	0x3f50624d
+ 80022fc:	3f40624d 	.word	0x3f40624d
  8002300:	c0400000 	.word	0xc0400000
  8002304:	40400000 	.word	0x40400000
     }
@@ -5867,15 +5867,15 @@ int main(void)
 //  pid.Kd_pitch = 0.4;
 
 // 25/04: PID01 Balance P only
-  pid.Kp_roll = 3.9;
+  pid.Kp_roll = 2.55;
  8003520:	4b3b      	ldr	r3, [pc, #236]	; (8003610 <main+0x23c>)
  8003522:	4a3c      	ldr	r2, [pc, #240]	; (8003614 <main+0x240>)
  8003524:	60da      	str	r2, [r3, #12]
-  pid.Ki_roll = 0.0005;
+  pid.Ki_roll = 0.008;
  8003526:	4b3a      	ldr	r3, [pc, #232]	; (8003610 <main+0x23c>)
  8003528:	4a3b      	ldr	r2, [pc, #236]	; (8003618 <main+0x244>)
  800352a:	611a      	str	r2, [r3, #16]
-  pid.Kd_roll = 0.092;
+  pid.Kd_roll = 0.045;
  800352c:	4b38      	ldr	r3, [pc, #224]	; (8003610 <main+0x23c>)
  800352e:	4a3b      	ldr	r2, [pc, #236]	; (800361c <main+0x248>)
  8003530:	615a      	str	r2, [r3, #20]
@@ -5884,15 +5884,15 @@ int main(void)
 //  ROL P 00.901 I 00.001 D 00.201 Z -> pid 1 truc
 //  ROL P 01.250 I 00.001 D 00.221 Z -> P manh hon nhung dao dong hon.
 //  ROL P 01.950 I 00.001 D 00.271 Z -> PID 2 truc
-  pid.Kp_pitch = 4.1;//pid.Kp_roll / 2.0;
+  pid.Kp_pitch = 3.6;//pid.Kp_roll / 2.0;
  8003532:	4b37      	ldr	r3, [pc, #220]	; (8003610 <main+0x23c>)
  8003534:	4a3a      	ldr	r2, [pc, #232]	; (8003620 <main+0x24c>)
  8003536:	619a      	str	r2, [r3, #24]
-  pid.Ki_pitch = 0.001;//pid.Ki_roll / 2.0;
+  pid.Ki_pitch = 0.0005;//pid.Ki_roll / 2.0;
  8003538:	4b35      	ldr	r3, [pc, #212]	; (8003610 <main+0x23c>)
  800353a:	4a3a      	ldr	r2, [pc, #232]	; (8003624 <main+0x250>)
  800353c:	61da      	str	r2, [r3, #28]
-  pid.Kd_pitch = 0.095;//pid.Kd_roll / 2.0;
+  pid.Kd_pitch = 0.075;//pid.Kd_roll / 2.0;
  800353e:	4b34      	ldr	r3, [pc, #208]	; (8003610 <main+0x23c>)
  8003540:	4a39      	ldr	r2, [pc, #228]	; (8003628 <main+0x254>)
  8003542:	621a      	str	r2, [r3, #32]
@@ -6006,12 +6006,12 @@ int main(void)
  8003608:	200006b0 	.word	0x200006b0
  800360c:	200006e0 	.word	0x200006e0
  8003610:	20000700 	.word	0x20000700
- 8003614:	4079999a 	.word	0x4079999a
- 8003618:	3a03126f 	.word	0x3a03126f
- 800361c:	3dbc6a7f 	.word	0x3dbc6a7f
- 8003620:	40833333 	.word	0x40833333
- 8003624:	3a83126f 	.word	0x3a83126f
- 8003628:	3dc28f5c 	.word	0x3dc28f5c
+ 8003614:	40233333 	.word	0x40233333
+ 8003618:	3c03126f 	.word	0x3c03126f
+ 800361c:	3d3851ec 	.word	0x3d3851ec
+ 8003620:	40666666 	.word	0x40666666
+ 8003624:	3a03126f 	.word	0x3a03126f
+ 8003628:	3d99999a 	.word	0x3d99999a
  800362c:	3f266666 	.word	0x3f266666
  8003630:	358637bd 	.word	0x358637bd
  8003634:	3b03126f 	.word	0x3b03126f
@@ -7930,7 +7930,7 @@ void StartTask03(void const * argument)
  8004404:	200007f1 	.word	0x200007f1
  8004408:	200007dc 	.word	0x200007dc
  800440c:	200007e8 	.word	0x200007e8
- 8004410:	461c4000 	.word	0x461c4000
+ 8004410:	47c35000 	.word	0x47c35000
  8004414:	200007e0 	.word	0x200007e0
  8004418:	200007ec 	.word	0x200007ec
  800441c:	20000651 	.word	0x20000651

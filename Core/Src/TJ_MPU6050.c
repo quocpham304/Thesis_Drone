@@ -570,7 +570,8 @@ void PID(rawpitchyaw *angle, PID_param *pid, int rop, int Init_CCR, float desire
 //    pid->elapsedTime = (pid->time - pid->timePrev) / 1000.0;
 //    pid->timePrev = pid->time;
 
-    pid->elapsedTime = 0.001;
+    //pid->elapsedTime = 0.001;
+	pid->elapsedTime = 0.0005;
 
     // into PID
 	pid->roll_error = angle->roll - desired_roll_angle;//0.0f; // desired_angle = 0

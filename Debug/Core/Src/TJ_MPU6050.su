@@ -18,4 +18,4 @@
 ../Core/Src/TJ_MPU6050.c:529:6:MPU6050_Get_Accel_RawData_to_CaliBration	40	static
 ../Core/Src/TJ_MPU6050.c:550:6:MPU6050_Get_Gyro_RawData_to_CaliBration	16	static
 ../Core/Src/TJ_MPU6050.c:560:6:PID	32	static
-../Core/Src/TJ_MPU6050.c:659:6:MahonyAHRSupdate	160	static
+../Core/Src/TJ_MPU6050.c:660:6:MahonyAHRSupdate	160	static
